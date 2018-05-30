@@ -1,0 +1,1247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Culqi: Earned Value Analysis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="include/style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+         <div id="navigation">
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+
+                <li><a href="task.html">Task Report</a></li>
+
+                <li><a href="resource.html">Resource Report</a></li>
+                
+                <li><a class="active" href="eva.html">Earned Value Analysis</a></li>
+
+                <li><a href="gantt.html">Gantt Chart</a></li>
+
+                <li><a href="timeline.html">Resource Timeline</a></li>
+                
+                <li><a href="montecarlo.html">Monte Carlo Simulation</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>Culqi: <span class="subtitle">Earned Value Analysis</span></h1>
+
+            <div class="tablewrap">
+            <table class="basic">
+
+	<tr>
+		<th>Task</th>
+		<th>Planned Value</th>
+		<th>Earned Value</th>
+		<th>Actual Cost</th>
+		<th>Cost Variance</th>
+		<th>Schedule Variance</th>
+		<th>Estimate at Completion</th>
+		<th>Budgeted at Completion</th>
+		<th>Variance at Completion</th>
+		<th>CPI</th>
+		<th>SPI</th>
+		<th>CV %</th>
+		<th>SV %</th>
+		<th>TCPI</th>
+		
+	</tr>
+			
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">1) Definir Funciones Formulario</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">2) Definir Funciones API Tokens</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">3) Definir Funciones API Cargos</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">4) Requerimientos Funcionales y No Funcionales</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">5) Validación de las funcionalidades</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">6) Definición de Infraestructura y Servicios</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">7) Pruebas de Concepto</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">8) Elección de Consultor PCI</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">9) Scoping</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">10) Acompañamiento Desarrollo</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">11) Creación Marco Normativo</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">11.1) Creación de diagramas</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">11.2) Creación de políticas</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">11.3) Creación de procedimientos</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">11.4) Creación de manuales</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">11.5) Creación de estándares</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">11.6) Creación de actas</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">11.7) Creación de inventarios</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">12) Definición metodología de desarrollo</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">12.1) Guía de desarrollo</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">12.2) Guía de artefactos</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">13) Formación Equipo de Desarrollo</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">13.1) Búsqueda</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">13.2) Entrevistas</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">13.3) Evaluaciones</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">13.4) Inducción</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">13.5) Capacitación</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">14) Desarrollo</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">14.1) API Gateway </td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">14.2) Tokenizer</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.2.1) MockUp Tokenizador</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.2.2) Implementación Tokenizer</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.2.3) Base Datos Tokens</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">14.3) Checkout</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.3.1) Diseño Formulario de Captura Culqi</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.3.2) Implementación del Formulario de captura</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.3.3) Creación snippet JS de Culqi</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">14.4) Authorizer</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.4.1) Módulo Authorizer</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 48px;" class="wrap">14.4.1.1) Mockup Authorizer</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 48px;" class="wrap">14.4.1.2) Implementación Authorizer</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 48px;" class="wrap">14.4.1.3) Base Datos Operaciones</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.4.2) Integración con Adquirentes, Pasarelas, etc.</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 48px;" class="wrap">14.4.2.1) Integración Visanet</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 48px;" class="wrap">14.4.2.2) Integración PMC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">14.5) Token Authorizer</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.5.1) Módulo</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 48px;" class="wrap">14.5.1.1) Mockup</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 48px;" class="wrap">14.5.1.2) AWS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">14.6) Culqi Merchant Services</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">14.6.1) Implementación del adaptador de la migración Culqi 1_2 -&gt; 3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">15) Pruebas</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">15.1) Migración </td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">15.1.1) Pruebas Integrales Culqi 1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">15.1.2) Pruebas Integrales Culqi 1.2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">15.1.3) Pruebas Integrales Culqi 2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">15.2) API 3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">15.2.1) Pruebas integrales Tokenización</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">15.2.2) Pruebas integrales Autorización</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">15.3) Desempeño</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">15.3.1) Estrés</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 28px;" class="wrap">15.4) Seguridad</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 38px;" class="wrap">15.4.1) Ethical Hacking</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">16) Migración de Tokens Azure -&gt; AWS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">17) Verificación y Análisis de Brechas (GAP)</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">18) Remediación de faltas encontradas</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">19) PreAssesment</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">20) Certifiación</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+		
+	<tr>
+		<td style="padding-left: 18px;" class="wrap">21) Certificación</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+</table>
+            </div>
+            <div id="key">
+	            <h4>Key</h4>
+	            <ul>
+		            <li>Planned Value - Budgeted Cost of Work Scheduled (BCWS)</li>
+		            <li>Earned Value - budget Cost of Work Performed (BCWP)</li>
+		            <li>CPI - Cost Performance Index</li>
+		            <li>SPI - Schedule Performance Index</li>
+		            <li>CV% - Cost Variance Percent</li>
+		            <li>SV% - Schedule Variance Percent</li>
+		            <li>TCPI - To-Complete Performance Index</li>
+	            </ul>    
+            </div>
+			</div> 
+            <p class="footer">Exported 5/30/18</p>
+        </div>
+    </div>
+</body>
+</html>
